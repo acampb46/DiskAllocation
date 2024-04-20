@@ -1,0 +1,20 @@
+40
+add "bob.txt" 5
+add "second hand.txt" 9
+add "third" 7
+add "tooBig" 30
+print
+read "bob.txt"
+read "second hand.txt"
+del "bob.txt"
+append "second hand.txt" 1
+print
+add "fourth in line.dat" 1
+add "fifth is big" 9
+read "fourth in line.dat"
+print
+del "third"
+add "size5" 5
+add "size1" 1
+read "fifth is big"
+print

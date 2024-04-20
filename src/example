@@ -1,0 +1,73 @@
+-------------------- START CONTIGUOUS SIMULATION --------------------
+Total Blocks: 40
+File bob.txt ADDED to drive
+File second hand.txt ADDED to drive
+File third ADDED to drive
+File tooBig FAILED TO ADD to drive, insufficient space
+-------------------- Current Drive Contents --------------------
+
+DIRECTORY:
+1. bob.txt BLOCKS: [0-4]
+2. second hand.txt BLOCKS: [5-13]
+3. third BLOCKS: [14-20]
+
+DETAILS:
+1 1 1 1 1 2 2 2 2 2
+2 2 2 2 3 3 3 3 3 3
+3 * * * * * * * * *
+* * * * * * * * * *
+File bob.txt was READ successfully with 1 head moves
+File second hand.txt was READ successfully with 1 head moves
+File bob.txt DELETED successfully
+File second hand.txt APPEND, doesn't fit in place, removing from existing memory location, add in new location
+Moving file of 9 blocks with as many head moves.
+File second hand.txt ADDED to drive
+-------------------- Current Drive Contents --------------------
+
+DIRECTORY:
+1. third BLOCKS: [14-20]
+2. second hand.txt BLOCKS: [0-9]
+
+DETAILS:
+2 2 2 2 2 2 2 2 2 2
+* * * * 1 1 1 1 1 1
+1 * * * * * * * * *
+* * * * * * * * * *
+File fourth in line.dat ADDED to drive
+File fifth is big ADDED to drive
+File fourth in line.dat was READ successfully with 1 head moves
+-------------------- Current Drive Contents --------------------
+
+DIRECTORY:
+1. third BLOCKS: [14-20]
+2. second hand.txt BLOCKS: [0-9]
+3. fourth in line.dat BLOCKS: [10-10]
+4. fifth is big BLOCKS: [21-29]
+
+DETAILS:
+2 2 2 2 2 2 2 2 2 2
+3 * * * 1 1 1 1 1 1
+1 4 4 4 4 4 4 4 4 4
+* * * * * * * * * *
+File third DELETED successfully
+File size5 ADDED to drive
+File size1 ADDED to drive
+File fifth is big was READ successfully with 1 head moves
+-------------------- Current Drive Contents --------------------
+
+DIRECTORY:
+1. second hand.txt BLOCKS: [0-9]
+2. fourth in line.dat BLOCKS: [10-10]
+3. fifth is big BLOCKS: [21-29]
+4. size5 BLOCKS: [4-8]
+5. size1 BLOCKS: [9-9]
+
+DETAILS:
+1 1 1 1 4 4 4 4 4 5
+2 * * * * * * * * *
+* 3 3 3 3 3 3 3 3 3
+* * * * * * * * * *
+-------------------- STATS - Contiguous --------------------
+Head Moves: 13
+File(s) not added due to space constraints: 1
+--------------------END OF CONTIGUOUS ANALYSIS--------------------
